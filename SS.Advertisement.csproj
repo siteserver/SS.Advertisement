@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net4.5.2</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageId>SS.Form</PackageId>
+    <Version>1.0.0</Version>
+    <Title>自定义表单插件</Title>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>SiteServer CMS</Authors>
+    <Company>SiteServer CMS</Company>
+    <Product>Datory</Product>
+    <Description>iteServer CMS 自定义表单插件是简单高效的电子表单工具，实现轻松快捷的表单制作</Description>
+    <PackageLicenseUrl>https://github.com/siteserver/SS.Form/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/siteserver/SS.Form</PackageProjectUrl>
+    <PackageIconUrl>https://plugins.siteserver.cn/ss.form/logo.svg</PackageIconUrl>
+    <Copyright>Copyright © SiteServer CMS 2018</Copyright>
+    <PackageTags>SiteServer CMS Form Plugin</PackageTags>
+    <RepositoryUrl>https://github.com/siteserver/SS.Form</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>完善菜单显示，修正勾选后需提交信息无效等问题</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="SiteServer.Plugin" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+</Project>
