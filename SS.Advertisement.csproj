@@ -12,10 +12,10 @@
     <Product></Product>
     <Description>为 SiteServer CMS 系统添加广告发布及管理功能</Description>
     <PackageLicenseUrl>https://github.com/siteserver/SS.Advertisement/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/siteserver/SS.Advertisement</PackageProjectUrl>
-    <PackageIconUrl>https://plugins.siteserver.cn/ss.advertisement/logo.svg</PackageIconUrl>
-    <Copyright>Copyright © SiteServer CMS 2018</Copyright>
-    <PackageTags>SiteServer CMS Form Plugin</PackageTags>
+    <PackageProjectUrl>https://www.siteserver.cn/docs/ss.advertisement/</PackageProjectUrl>
+    <PackageIconUrl>https://www.siteserver.cn/docs/ss.advertisement/logo.svg</PackageIconUrl>
+    <Copyright>Copyright © SiteServer CMS 2019</Copyright>
+    <PackageTags>SiteServer CMS Advertisement Plugin</PackageTags>
     <RepositoryUrl>https://github.com/siteserver/SS.Advertisement</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>

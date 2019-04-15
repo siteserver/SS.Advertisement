@@ -7,17 +7,16 @@
     <authors>SiteServer CMS</authors>
     <owners>siteserver</owners>
     <licenseUrl>https://github.com/siteserver/SS.Advertisement/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://plugins.siteserver.cn/ss.advertisement/</projectUrl>
-    <iconUrl>https://plugins.siteserver.cn/ss.advertisement/logo.svg</iconUrl>
+    <projectUrl>https://www.siteserver.cn/docs/ss.advertisement/</projectUrl>
+    <iconUrl>https://www.siteserver.cn/docs/ss.advertisement/logo.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>为 SiteServer CMS 系统添加广告发布及管理功能</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2019</copyright>
+    <copyright>Copyright © SiteServer CMS 2019</copyright>
     <tags>SiteServer CMS Advertisement Plugin</tags>
   </metadata>
 
   <files>
     <file src="pages\assets\fonts\**" target="Content\pages\assets\fonts"/>
-    <file src="docs\**" target="Content\docs"/>
   </files>
 </package>
