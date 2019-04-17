@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net4.5.2</TargetFrameworks>
+    <TargetFrameworks>net452</TargetFrameworks>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageId>SS.Advertisement</PackageId>
     <Version>1.0.0</Version>
@@ -11,23 +11,28 @@
     <Company>SiteServer CMS</Company>
     <Product></Product>
     <Description>为 SiteServer CMS 系统添加广告发布及管理功能</Description>
-    <PackageLicenseUrl>https://github.com/siteserver/SS.Advertisement/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://www.siteserver.cn/docs/ss.advertisement/</PackageProjectUrl>
-    <PackageIconUrl>https://www.siteserver.cn/docs/ss.advertisement/logo.svg</PackageIconUrl>
-    <Copyright>Copyright © SiteServer CMS 2019</Copyright>
+    <PackageLicense>GPL-3.0</PackageLicense>
+    <PackageProjectUrl>https://github.com/siteserver/SS.Advertisement</PackageProjectUrl>
+    <PackageIconUrl>https://www.siteserver.cn/docs/SS.Advertisement/logo.svg</PackageIconUrl>
+    <Copyright>Copyright © SiteServer CMS</Copyright>
     <PackageTags>SiteServer CMS Advertisement Plugin</PackageTags>
     <RepositoryUrl>https://github.com/siteserver/SS.Advertisement</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Summary of changes made in this release of the package.</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
-    <PackageReference Include="SiteServer.Plugin" Version="2.3.2" />
+    <PackageReference Include="SiteServer.Plugin" Version="2.3.4" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\**" />
+    <Content Include="pages\**" />
   </ItemGroup>
 
 </Project>
