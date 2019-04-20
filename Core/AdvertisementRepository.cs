@@ -6,7 +6,7 @@ namespace SS.Advertisement.Core
 {
     public class AdvertisementRepository : Repository<AdvertisementInfo>
     {
-        public AdvertisementRepository(): base(Context.Environment.Database) { }
+        public AdvertisementRepository(): base(Context.Environment.DatabaseType, Context.Environment.ConnectionString) { }
 
         private static class Attr
         {
