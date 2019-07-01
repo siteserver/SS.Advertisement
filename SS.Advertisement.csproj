@@ -13,7 +13,7 @@
     <Description>为 SiteServer CMS 系统添加广告发布及管理功能</Description>
     <PackageLicense>GPL-3.0</PackageLicense>
     <PackageProjectUrl>https://github.com/siteserver/SS.Advertisement</PackageProjectUrl>
-    <PackageIconUrl>https://www.siteserver.cn/docs/SS.Advertisement/logo.svg</PackageIconUrl>
+    <PackageIconUrl>https://www.siteserver.cn/docs/ss/advertisement/logo.svg</PackageIconUrl>
     <Copyright>Copyright © SiteServer CMS</Copyright>
     <PackageTags>SiteServer CMS Advertisement Plugin</PackageTags>
     <RepositoryUrl>https://github.com/siteserver/SS.Advertisement</RepositoryUrl>
@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
-    <PackageReference Include="SiteServer.Plugin" Version="2.3.6" />
+    <PackageReference Include="SiteServer.Plugin" Version="2.3.11" />
   </ItemGroup>
 
   <ItemGroup>

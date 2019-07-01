@@ -26,6 +26,47 @@ var data = {
 };
 
 var methods = {
+  inputFile: function(newFile, oldFile) {
+    if (newFile && oldFile) {
+      if (newFile.progress !== oldFile.progress) {
+        utils.loading(true);
+      }
+      if (newFile.error && !oldFile.error) {
+        utils.loading(false);
+      }
+      if (newFile.success && !oldFile.success) {
+        utils.loading(false);
+      }
+    }
+    
+    if (Boolean(newFile) !== Boolean(oldFile) || oldFile.error !== newFile.error) {
+      if (!this.$refs.upload.active) {
+        this.$refs.upload.active = true
+      }
+    }
+
+    if (newFile && oldFile && newFile.xhr && newFile.success !== oldFile.success) {
+      this.adInfo.imageUrl = newFile.response.value;
+      this.adInfo.width = newFile.response.width;
+      this.adInfo.height = newFile.response.height;
+    }
+  },
+
+  inputFilter: function (newFile, oldFile, prevent) {
+    if (newFile && !oldFile) {
+      if (!/\.(gif|jpg|jpeg|png|webp)$/i.test(newFile.name)) {
+        swal2({
+          title: '上传格式错误！',
+          text: '请上传图片',
+          type: 'error',
+          confirmButtonText: '确 定',
+          confirmButtonClass: 'btn btn-primary',
+        });
+        return prevent()
+      }
+    }
+  },
+  
   apiGet: function () {
     var $this = this;
 
@@ -68,35 +109,6 @@ var methods = {
     }).then(function () {
       utils.loading(false);
     });
-  },
-
-  inputFile: function(newFile, oldFile) {
-    if (Boolean(newFile) !== Boolean(oldFile) || oldFile.error !== newFile.error) {
-      if (!this.$refs.upload.active) {
-        this.$refs.upload.active = true
-      }
-    }
-
-    if (newFile && oldFile && newFile.xhr && newFile.success !== oldFile.success) {
-      this.adInfo.imageUrl = newFile.response.value;
-      this.adInfo.width = newFile.response.width;
-      this.adInfo.height = newFile.response.height;
-    }
-  },
-
-  inputFilter: function (newFile, oldFile, prevent) {
-    if (newFile && !oldFile) {
-      if (!/\.(gif|jpg|jpeg|png|webp)$/i.test(newFile.name)) {
-        swal2({
-          title: '上传格式错误！',
-          text: '请上传图片',
-          type: 'error',
-          confirmButtonText: '确 定',
-          confirmButtonClass: 'btn btn-primary',
-        });
-        return prevent()
-      }
-    }
   },
 
   btnSelectClick: function () {
